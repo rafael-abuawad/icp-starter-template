@@ -1,0 +1,16 @@
+{
+  "canisters": {
+    "backend": {
+      "main": "backend/main.mo",
+      "type": "motoko"
+    },
+    "frontend": {
+      "dependencies": ["backend"],
+      "frontend": {
+        "entrypoint": "dist/index.html"
+      },
+      "source": ["dist"],
+      "type": "assets"
+    }
+  }
+}
